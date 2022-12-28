@@ -1,6 +1,5 @@
 body {
     background-color: #040404;
-    color: white;
 }
 
 h1,
@@ -8,4 +7,32 @@ h2,
 h3,
 h4 {
     color: #E3ABFF;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center; 
+    color: white;
+    font-weight: 400;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 100;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+.h1 {
+    font-size: 300%;
+}
+
+.h2 {
+    font-size: 150%;
+    margin-top: -50px;
 }
