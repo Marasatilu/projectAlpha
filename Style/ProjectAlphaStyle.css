@@ -72,6 +72,7 @@ footer {
 .footer {
     display:flex;
   flex-direction:row;
-  justify-content:space-arround;
+  align-items: center;
+  justify-content:center;
   flex-wrap:wrap-reverse;
 }
