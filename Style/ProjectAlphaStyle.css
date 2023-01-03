@@ -65,6 +65,13 @@ footer {
     height: 50px;
     border-radius: 5px;
 }
-.btn:hover {
-    background-color: 95FF8F;
+.btn:hover:focus {
+    background-color: #95FF8F;
+}
+
+.footer {
+    display:flex;
+  flex-direction:row;
+  justify-content:space-arround;
+  flex-wrap:wrap-reverse;
 }
