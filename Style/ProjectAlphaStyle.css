@@ -83,9 +83,6 @@ footer {
     font-family: 'Roboto', sans-serif;
     }
 
-.img {
-    max-width: 100%;
-}
 
 .unicornContainer {
     color: #ffffff;
@@ -121,6 +118,22 @@ footer {
   
 }
 
+.paragraph {
+    max-width: 300px;
+    text-align: left;
+}
+
+.paragraphPosition {
+    text-align:justify;
+  width:250px;
+  margin: 0 auto;
+    
+}
+
+a:visited,a:link {
+    color:#040404;
+    text-decoration: none;
+}
 
 .btn {
     display: flex;
@@ -136,11 +149,14 @@ footer {
     
     background: #E3ABFF;
     border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    
     }
 
-.btn:hover:focus {
+.btn:hover,.btn:focus  {
         background-color: #95FF8F;
     }
+
 
     
 
