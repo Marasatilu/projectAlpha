@@ -44,20 +44,7 @@ footer {
     margin-top: 20px;
 }
 
-@media only screen and (max-width:600px)
-{
-    .bg {
-        max-width: 100%;
-        background-image: url("../assets/Unicorndesktop.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 30px;
-        min-height: 450px;
-    }
 
-    
-} 
  
 
  .h1 {
@@ -72,17 +59,29 @@ footer {
 
 
 
-
+/* cambiar valores para pantalla completa de .paragraph y .paragraphPosition */
 .bg {
-    background: url("../assets/Unicorndesktop.png");
+    background: url("../assets/Unicornsmall.png");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    width: 100%;
-    min-height: 450px;
+   
+    min-width: 200px;
+    min-height: 600px;
     font-family: 'Roboto', sans-serif;
     }
 
+.paragraph {
+        max-width: 300px;
+        text-align: left;
+    }
+    
+.paragraphPosition {
+        text-align:justify;
+      width:250px;
+      margin: 0 auto;
+        
+    }
 
 .unicornContainer {
     color: #ffffff;
@@ -118,17 +117,7 @@ footer {
   
 }
 
-.paragraph {
-    max-width: 300px;
-    text-align: left;
-}
 
-.paragraphPosition {
-    text-align:justify;
-  width:250px;
-  margin: 0 auto;
-    
-}
 
 a:visited,a:link {
     color:#040404;
@@ -168,3 +157,36 @@ align-items: center;
 justify-content:center;
 flex-wrap:wrap-reverse;
 }
+
+@media only screen and (min-width:600px)
+{
+    .bg {
+        background: url("../assets/Unicorndesktop.png");
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+       
+        min-width: 200px;
+        min-height: 600px;
+        font-family: 'Roboto', sans-serif;
+        }
+
+
+    .desktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    .paragraph {
+            max-width: 600px;
+            text-align: left;
+        }
+        
+    .paragraphPosition {
+            text-align:justify;
+          width:250px;
+          margin: 0 auto;
+            
+        }
+    
+} 
