@@ -1,6 +1,7 @@
 body {
     background-color: #040404;
     margin: 0;
+    color: #ffffff;
     
 }
 
@@ -22,7 +23,7 @@ p {
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    color: white;
+    color: #E3ABFF;
    
 }
 
@@ -39,7 +40,7 @@ h4 {
 
 footer {
     background-color: #E3ABFF;
-    width: 100%;
+    min-width: 100%;
     height: 50px;
     margin-top: 20px;
 }
@@ -59,27 +60,38 @@ footer {
 
 
 
-/* cambiar valores para pantalla completa de .paragraph y .paragraphPosition */
+
 .bg {
     background: url("../assets/Unicornsmall.png");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
    
-    min-width: 200px;
+    min-width: 448px;
     min-height: 600px;
     font-family: 'Roboto', sans-serif;
     }
+
+.nameAndTitle {
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+
+}
+
+
 
 .paragraph {
         max-width: 300px;
         text-align: left;
     }
     
-.paragraphPosition {
+.position {
+    display: grid;
         text-align:justify;
       width:250px;
       margin: 0 auto;
+      align-items: center;
         
     }
 
@@ -92,6 +104,7 @@ footer {
     top: 35%;
     font-size: 300%;
     padding: 20px;
+    padding-left: 20px;
 }
     
 .fullStackContainer {
@@ -103,18 +116,18 @@ footer {
 }
 
 .center {
-    display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 300px;
+  max-height: 300px;
 }
 
 .centerSvgs {
-    display: block;
+display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
-  
+  margin-bottom: 3%;
+  justify-content: center;
+
 }
 
 
@@ -147,6 +160,15 @@ a:visited,a:link {
     }
 
 
+.gameboy {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            margin: 0 auto;
+            
+            
+    }
     
 
 
@@ -158,8 +180,18 @@ justify-content:center;
 flex-wrap:wrap-reverse;
 }
 
-@media only screen and (min-width:600px)
+@media only screen and (min-width:652px)
 {
+
+    .unicornContainer {
+        padding-left: 40px;
+    }
+        
+    .fullStackContainer {
+        padding-left: 40px;
+        
+    }
+
     .bg {
         background: url("../assets/Unicorndesktop.png");
         background-position: center; 
@@ -171,11 +203,14 @@ flex-wrap:wrap-reverse;
         font-family: 'Roboto', sans-serif;
         }
 
-
-    .desktop {
-        display: flex;
-        justify-content: center;
-    }
+        .svg1 {
+            
+            padding-left: 30%;
+        }
+        .svg2 {
+            
+            padding-right: 30%;
+        }
 
     .paragraph {
             max-width: 600px;
@@ -184,9 +219,49 @@ flex-wrap:wrap-reverse;
         
     .paragraphPosition {
             text-align:justify;
-          width:250px;
-          margin: 0 auto;
+          max-width:250px;
+          margin:auto;
+            
+        }
+
+    .desktop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
         }
     
+    .gameboy {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            margin: 0 auto;
+            
+            
+    }
+} 
+
+
+@media only screen and (min-width:1024px)
+{
+ 
+    .unicornContainer {
+        font-size: larger;
+    }
+        
+    .fullStackContainer {
+        padding-left: 40px;
+        
+    }
+
+    .gameboy {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 700px;
+    }
+    
+    
+
 } 
