@@ -217,12 +217,6 @@ flex-wrap:wrap-reverse;
             text-align: left;
         }
         
-    .paragraphPosition {
-            text-align:justify;
-          max-width:250px;
-          margin:auto;
-            
-        }
 
     .desktop {
             display: flex;
