@@ -10,7 +10,7 @@ observer = new IntersectionObserver((entries, observer) => {
     }
     else {
       entry.target.removeAttribute('style');
-      if (!entry.target.getAttribute('scroll-reveal').includes('loop')) {
+      if (!entry.target.getAttribute('scroll-reveal').includes('loop')){
         observer.unobserve(entry.target);
       }
     };
